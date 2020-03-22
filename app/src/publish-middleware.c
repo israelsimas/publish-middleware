@@ -24,10 +24,9 @@ int main() {
 
   int status;
  
-
   conn = middleware_open(PUBLISH_ID, MIDDLEWARE_HOST, MIDDLEWARE_PORT, NULL);
   if (!conn) {
-    log_error("Invalid connection middleware\n");
+    log_error("Invalid connection middleware");
   }
 
   // First Publish - single string
